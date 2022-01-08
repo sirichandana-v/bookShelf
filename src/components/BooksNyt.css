@@ -1,0 +1,9 @@
+.booksNyt__bookCards {
+    /* margin-left: 350px;
+    margin-right: 30px; */
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}

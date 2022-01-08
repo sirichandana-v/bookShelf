@@ -1,0 +1,48 @@
+.booksFeed__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 40%;
+    background-color: rgb(233, 221, 221);
+}
+
+.booksFeed__searchInput {
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.booksFeed__searchIcon {
+    background-color: rgb(240, 203, 203);
+    border: none;
+    height: 35px;
+    cursor: pointer;
+}
+
+.booksFeed__resultInput {
+    margin-top: 20px;
+}
+
+.booksFeed__resultNo {
+    width: 97px;
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 5px;
+    border: none;
+    cursor: pointer;
+}

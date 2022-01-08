@@ -1,0 +1,26 @@
+table,
+td,
+th {
+    border: 1.5px solid black;
+}
+
+.myBooks__table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+thead th:nth-child(1) {
+    width: 10%;
+}
+
+.myBooks__msgS {
+    margin-top: 20px;
+    color: green
+}
+
+.myBooks__msgF {
+    margin-top: 120px;
+    color: red
+}

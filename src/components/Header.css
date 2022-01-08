@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Mulish:wght@200;400&family=Roboto:wght@100&family=Ubuntu&display=swap');
+.header {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    /* border: 2px solid black; */
+    padding: 4px 20px;
+    top: 0px;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0px 5px 8px -9px rgb(48, 1, 1);
+    justify-content: space-between;
+    font-family: 'Lacquer', cursive;
+    background-image: url('https://img.freepik.com/free-photo/wooden-background_24972-623.jpg?size=626&ext=jpg');
+}
+
+.header__img {
+    display: flex;
+    margin-left: 20px;
+    color: white;
+}
+
+.header__img>img {
+    height: 60px;
+    object-fit: contain;
+}
+
+.header__bookShelf {
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Lacquer', cursive;
+}
+
+.header__middle {
+    display: flex;
+    /* border: 2px solid black; */
+    text-decoration: none;
+    flex: 2;
+    margin-left: 100px;
+    font-size: 15px;
+}
+
+.header__melement {
+    text-decoration: none;
+    color: white;
+    margin-left: 16px;
+}
+
+.header__genres {
+    text-decoration: none;
+    margin-left: 120px;
+    color: white;
+}
+
+.header__end {
+    /* border: 2px solid black; */
+    flex: 1;
+}

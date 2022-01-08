@@ -1,0 +1,62 @@
+.bookCard {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 300px;
+    height: 400px;
+    margin-right: 10px;
+    margin-top: 30px;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.bookCard__start {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bookCard__start>img {
+    width: 150px;
+    height: 200px;
+    /* object-fit: contain; */
+}
+
+.bookCard__title>h4 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.bookCard__price {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+
+/* On mouse-over, add a deeper shadow */
+
+.bookCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* Add some padding inside the card container */
+
+.bookCard__container {
+    padding: 2px 1px;
+    position: absolute;
+    top: 244px;
+}
+
+#bookCard__addIcon {
+    position: absolute;
+    top: 209px;
+    left: 20px;
+}
+
+#bookCard__removeIcon {
+    position: absolute;
+    top: 209px;
+    right: 20px;
+}
