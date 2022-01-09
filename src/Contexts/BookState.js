@@ -1,4 +1,4 @@
-import React,{useState,useRef} from 'react'
+import React,{useState} from 'react'
 import BookContext from './bookContext';
 
 function BookState({children}) {
@@ -7,9 +7,9 @@ function BookState({children}) {
     const [books, setBooks] = useState({initial:true,books:[]});
     
     const [nytBooks,setNytBooks]=useState([])
-    console.log(books , "*******************after");
+   
     const [selectedBooks,setSelectedBooks]=useState([]);
-    const countMount=useRef(0);
+    // const countMount=useRef(0);
     function handleAddClick(id,type,setDisable){
       
         const newBooks=type==='search'?(books.books.filter(book=>{return (book.id===id)})):(nytBooks.filter(book=>{return (book.rank===id)}))
@@ -24,7 +24,7 @@ function BookState({children}) {
       }
 
       const booksState={
-          books,setBooks,selectedBooks,setSelectedBooks,handleAddClick,handleRemoveClick,countMount,nytBooks,setNytBooks
+          books,setBooks,selectedBooks,setSelectedBooks,handleAddClick,handleRemoveClick,nytBooks,setNytBooks
       }
       
 

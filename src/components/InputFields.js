@@ -1,19 +1,12 @@
-import React,{useContext,useState,useRef} from 'react'
+import React from 'react'
 import './InputFields.css'
 import SearchIcon from "@mui/icons-material/Search";
-import axios from 'axios';
-import BookContext from "../Contexts/bookContext";
-import BooksFromSearch from './BooksFromSearch';
-import Spinner from './Spinner';
 function InputFields({handleSubmit,search,setSearch}) {
 
-const {books,setBooks}=useContext(BookContext)
   
-  console.log("inputfield*****************************")
-    console.log(books)
   
 
-  const inputRef = useRef();
+  // const inputRef = useRef();
 
     const handleInputChange = (e) => {
         setSearch({ ...search, [e.target.name]: e.target.value });
@@ -25,7 +18,6 @@ const {books,setBooks}=useContext(BookContext)
       <div className="inputFields">
           <form onSubmit={handleSubmit} className="InputFields__search">
         <input
-            ref={inputRef}
             type="text"
             className="InputFields__searchInput"
             name="searchText"
@@ -34,7 +26,7 @@ const {books,setBooks}=useContext(BookContext)
             placeholder="Search for any book you like..."
           />
           <input
-            // ref={searchRef}
+            
             type="text"
             className="InputFields__resultNo"
             name="maxResults"
