@@ -8,6 +8,7 @@
     margin-top: 30px;
     overflow-y: hidden;
     position: relative;
+    background-color: white;
 }
 
 .bookCard__start {

@@ -6,6 +6,8 @@ import BooksFeed from './components/BooksFeed';
 import MyBooks from './components/MyBooks';
 import BookState from "./Contexts/BookState";
 import BooksNyt from "./components/BooksNyt";
+import BookGenres from "./components/BookGenres";
+import Genre from "./components/Genre";
 
 
 
@@ -28,6 +30,12 @@ function App() {
         }/>
         <Route exact path='/nytbooks' element={
               <BooksNyt/>
+        }/>
+        <Route exact path='/genre/:genre' element={
+              <Genre/>
+        }/>
+        <Route exact path='/genres' element={
+              <BookGenres/>
         }/>
       </Routes>
       </BookState>

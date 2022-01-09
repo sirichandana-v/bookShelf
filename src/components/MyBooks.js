@@ -5,7 +5,6 @@ import BookContext from "../Contexts/bookContext";
 
 function MyBooks() {
 
-
     const {handleRemoveClick,selectedBooks}=useContext(BookContext)
 
 console.log("myBooks",selectedBooks)
@@ -17,7 +16,7 @@ console.log("myBooks",selectedBooks)
             <td>{index+1}</td>
             <td>{<img src={book.volumeInfo?(book.volumeInfo.readingModes.image
                   ? book.volumeInfo.imageLinks.smallThumbnail
-                  : ""):book.book_image} alt="book" style={{height:'90px',objectFit: 'contain', padding:'6px'}}/>
+                  : "https://islandpress.org/sites/default/files/default_book_cover_2015.jpg"):book.book_image} alt="book" style={{height:'90px',objectFit: 'contain', padding:'6px'}}/>
             }</td>
             
             <td><a href={book.volumeInfo?book.volumeInfo.infoLink:book.amazon_product_url} target="_blank" rel="noreferrer">{book.volumeInfo?book.volumeInfo.title:book.title}</a></td>

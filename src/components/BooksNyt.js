@@ -1,14 +1,15 @@
-import React,{useContext, useEffect} from 'react'
+import React,{useContext, useEffect,useState} from 'react'
 import './BooksNyt.css'
 import BookCard from './BookCard'
 import axios from "axios";
 import BookContext from "../Contexts/bookContext";
+import Spinner from './Spinner';
 
 const BooksNyt=()=> {
 
   const {nytBooks,setNytBooks}=useContext(BookContext)
   
-  
+  const [loading,setLoading]=useState(true);
 
   useEffect(() => {
     
@@ -19,12 +20,8 @@ const BooksNyt=()=> {
         const res = await axios.get(
           "https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=DFJhsRrABZE7KayCwR3PQY5TVarCK7LE"
         );
-        // setBooks(res.data.results.books);
-
-        // const presentBooks={books:res.data.results.books}
-        // console.log(presentBooks,"present books")
         setNytBooks(res.data.results.books);
-      
+      setLoading(false);
         
         }
       fetchBooks();
@@ -57,10 +54,8 @@ const BooksNyt=()=> {
     return (
         <div className="booksNyt">
         <h2>The New York Times Best Sellers</h2>
-        <div className="booksNyt__bookCards">
-          {/* {props.cards} */}
-          
-          {cards}
+        <div className="booksNyt__bookCards">  
+          {loading?<Spinner/>:cards}
         </div>
       </div>
             

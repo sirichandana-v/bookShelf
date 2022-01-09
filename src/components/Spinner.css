@@ -1,0 +1,8 @@
+.spinner {
+    margin-top: 250px;
+}
+
+.spinner>img {
+    width: 20px;
+    object-fit: contain;
+}

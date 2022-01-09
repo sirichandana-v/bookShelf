@@ -11,6 +11,7 @@ function BookState({children}) {
     const [selectedBooks,setSelectedBooks]=useState([]);
     const countMount=useRef(0);
     function handleAddClick(id,type,setDisable){
+      
         const newBooks=type==='search'?(books.books.filter(book=>{return (book.id===id)})):(nytBooks.filter(book=>{return (book.rank===id)}))
           setSelectedBooks([...selectedBooks,...newBooks]);
           setDisable({add:true,remove:false});

@@ -20,7 +20,7 @@ function BookCard({type,id,title,book_image,desc,link}) {
         <div className='bookCard'>
         <div className="bookCard__start">
             <Button id='bookCard__addIcon' size='small' variant="outlined" color="primary" disabled={disable.add} onClick={()=>handleAddClick(id,type,setDisable)}><AddIcon/></Button>
-            <img src={book_image?book_image:'https://storage.jainebooks.org/uploads/front-image/742014794-default-book.png'} alt="book" />
+            <img src={book_image?book_image:'https://islandpress.org/sites/default/files/default_book_cover_2015.jpg'} alt="book" />
             <Button id='bookCard__removeIcon' size='small' variant="outlined" color="secondary" disabled={disable.remove} onClick={()=>handleRemoveClick(id,setDisable)}><RemoveIcon/></Button>
         </div>
             <div className="bookCard__container">

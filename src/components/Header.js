@@ -17,6 +17,7 @@ const {selectedBooks}=useContext(BookContext)
             </div>
             <div className="header__middle">
                 <Link to='/nytbooks' className='header__melement'>Best Sellers</Link>
+                <Link to='/genres' className='header__melement'>Genres</Link>
                 <Link to='/mybooks' className='header__melement'>My books<span className="w3-badge w3-red">{selectedBooks.length}</span></Link>
                 
 

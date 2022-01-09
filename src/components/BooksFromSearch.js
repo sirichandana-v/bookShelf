@@ -1,15 +1,15 @@
-import React,{useContext} from 'react'
+import React,{useContext,useState} from 'react'
 import './BooksFromSearch.css'
 import BookCard from './BookCard'
 import BookContext from "../Contexts/bookContext";
+import Spinner from './Spinner';
 
 
-const BooksFromSearch=()=> {
+
+const BooksFromSearch=({loading})=> {
 
     const {books}=useContext(BookContext);
-    
-
-    const cards=books.books.map((book) => {
+    const cards=books.books?.map((book) => {
         const { id, volumeInfo } = book;
 
         return (
@@ -30,12 +30,13 @@ const BooksFromSearch=()=> {
       });
 
 
-
+console.log(loading);
     return (
-        <div className='booksFromSearch'>
+      
+                <div className='booksFromSearch'>
+                  {loading? <Spinner/>:cards}   
+                </div>
         
-            {cards}   
-        </div>
     )
 }
 

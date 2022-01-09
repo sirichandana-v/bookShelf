@@ -1,0 +1,9 @@
+.bookGenres__genres {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.bookGenres__row {
+    margin-top: 20px;
+}

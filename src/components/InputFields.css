@@ -1,15 +1,16 @@
-.booksFeed__search {
+.InputFields__search {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    margin-top: 20px;
+    margin-left: 520px;
     border-radius: 5px;
-    width: 40%;
+    width: 488px;
+    margin-left: 520px;
+    margin-top: 50px;
     background-color: rgb(233, 221, 221);
 }
 
-.booksFeed__searchInput {
+.InputFields__searchInput {
     border: none;
     background-color: transparent;
     text-decoration: none;
@@ -22,18 +23,18 @@
     cursor: pointer;
 }
 
-.booksFeed__searchIcon {
+.InputFields__searchIcon {
     background-color: rgb(240, 203, 203);
     border: none;
     height: 35px;
     cursor: pointer;
 }
 
-.booksFeed__resultInput {
+.InputFields__resultInput {
     margin-top: 20px;
 }
 
-.booksFeed__resultNo {
+.InputFields__resultNo {
     width: 97px;
     background-color: transparent;
     text-decoration: none;
